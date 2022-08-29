@@ -1,0 +1,176 @@
+* {
+    box-sizing:content-box;
+}
+
+body {
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+/* header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img:hover {
+    animation: zoom;
+    animation-duration:4s ;
+    transform:scale(1.08);
+} */
+
+
+fieldset.navone {
+    border-radius: 30px;
+    border-color: red;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+nav a {
+    text-decoration:none;
+    padding: 15px;
+    text-align: left;
+    float: left;
+    color: whitesmoke;
+    margin: 0px;
+    font-size:larger;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    background: transparent;
+    user-select:none;
+    position: relative;
+
+}
+
+nav a:hover{
+    color: white;
+    background: red;
+
+    }
+
+.search-container {
+        float: right;
+        position: relative; 
+       
+}
+
+h2 {
+    color: white;
+}
+
+#design-cast {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card .member {
+    background-color: black;
+    float: left;
+    width: 330px;
+    height: 350px;
+    margin: 1% 1% 20px 1%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+  }
+
+.member img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.4s ease-in;
+    border-radius: 10px;
+}
+
+.name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+
+  .name p {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .name .info {
+    display: none;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .member:hover img {
+    height: 180px;
+  }
+  
+  .member:hover .name {
+    color: #000;
+    top: 150px;
+  
+  }
+  .member:hover p {
+    color: white;
+  }
+  .member:hover .info {
+    display: block;
+  }
+  
+.name a{
+ color: red;
+}
+
+.glitch {
+    text-align: center;
+    padding: 2px;
+    padding-top: 0px;
+    font-size:small;
+    font-weight: bold;
+    font-size: 5rem; 
+    text-transform: uppercase; 
+    position: relative; 
+    color: red;
+    text-shadow: 0.05eme 0 0 red, -0.03em -0.04em 0 #fc00fcff, 0.025em 0.04em 0 white; 
+    animation: glitch 2025ms infinite;
+}
+
+@keyframes glitch {
+    0% {
+    text-shadow: 0.05em ee red, -8.03em -0.04em 0 purple, 0.025em 0.04em 0 white;
+    } 
+    10% {
+    text-shadow: 0.05em ee red, -0.03em -0.04em 0 purple, 0.025em 0.04em 0 white;
+    }
+    16% {
+    text-shadow: -0.05em -0.025em 0 red, 0.025em 0.035em 0 purple, -0.05em -0.05em 0 white; }
+    30% {
+    text-shadow: -0.05em -0.025em 0 red, 0.025em 0.035em 0 purple, -0.05em -0.05em 0 white;
+    }
+    50% {
+    text-shadow: 0.05em 0.035em 0 red, 0.03em 0 0 purple, 0 -0.04em 0 white;
+    } 
+    75% {
+    text-shadow: 0.05em 0.035em 0 red, 0.03em 0 0 purple, -0.04em 0 white;
+    } 
+    100% {
+    text-shadow: -0.05eme e red, -0.025em -0.04em 0  0 purple, -0.04em -0.025em 0 white;
+    }
+}
+    
+
+  
